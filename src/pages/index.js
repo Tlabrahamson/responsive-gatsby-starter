@@ -11,6 +11,7 @@ export default () => (
             <h2>Title Test</h2>
             <h3>Title Test</h3>
             <h4>Title Test</h4>
+            <p>Lorem Ipsum Dolor</p>
         </div>
     </Layout>
 )
