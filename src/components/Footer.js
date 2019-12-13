@@ -1,10 +1,10 @@
 import React from 'react'
-// import styles from '../css/footer.module.css'
+import styles from '../css/footer.module.css'
 
 export default function Footer() {
     return (
-        <footer>
-            <h3>Footer</h3>
+        <footer className={styles.theFooter}>
+            <h3>&copy; Footer {new Date().getFullYear()} All rights reserved</h3>
         </footer>
     )
 }
