@@ -25,12 +25,13 @@
 
 .nav-links a {
     transition: var(--theTransition);
-    color: #000;
+    color: var(--mainBlack);
     padding: 1rem 1.25rem;
+    text-decoration: none;
 }
 
 .nav-links a:hover {
-    color: #fff;
+    color: var(--lightGray);
 }
 
 .hamburger-menu {
@@ -47,7 +48,6 @@
 .hamburger-icon {
     font-size: 1.5rem;
 }
-
 
 @media screen and (max-width: 768px){
     .align-nav {
@@ -71,6 +71,8 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        opacity: 0;
+        transition: var(--theTransition);
     }
 
     .nav-links li {
@@ -79,5 +81,6 @@
     
     .show-nav {
         height: auto;
+        opacity: 1;
     }
 }
