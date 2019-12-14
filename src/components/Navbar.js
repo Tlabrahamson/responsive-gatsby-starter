@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import styles from "../css/navbar.module.css"
 import { FaBars } from "react-icons/fa"
-import logo from "../images/logo.png"
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
@@ -16,7 +15,7 @@ const Navbar = () => {
         <div className={styles.navContent}>
           <Link to={"/#"}>
             {/* Website logo */}
-            <img src={logo} className={styles.logo} alt="your logo" />
+            <div className={styles.logo}></div>
           </Link>
           <button className={styles.hamburgerMenu} onClick={toggleNav}>
             {/* Hamburger menu icon */}
