@@ -13,4 +13,8 @@ const Layout = ({children}) => {
     )
 }
 
+if (typeof window !== "undefined") {
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
 export default Layout;
